@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:DatabaseA
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+database-b:
+  datasource:
+    url: jdbc:h2:mem:DatabaseB
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
